@@ -60,5 +60,5 @@ plt.figure()
 inner_iter_number = 10
 avg_iter_numbers = np.zeros((dims.shape[0], inner_iter_number, cond_numbers.shape[0]))
 avg_iter_numbers = run_iters('Constant', avg_iter_numbers)
-plotter(cond_numbers, avg_iter_numbers, 'Avg number of iterations of GD with Constant line search (c=0.001)', [f'n={n}' for n in dims])
+plotter(cond_numbers, avg_iter_numbers, 'Avg number of iterations of GD with Constant line search (c=1.0)', [f'n={n}' for n in dims])
 plt.show()
